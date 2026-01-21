@@ -37,6 +37,6 @@ public class Dispensaire {
     private Adresse adresse;
 
     @ToString.Exclude
-    @OneToMany(mappedBy = "dispensaire", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "dispensaire", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Commande> commandes = new LinkedList<>();
 }

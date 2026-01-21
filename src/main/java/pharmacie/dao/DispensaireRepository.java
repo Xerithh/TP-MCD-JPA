@@ -8,5 +8,5 @@ import pharmacie.entity.Dispensaire;
 
 public interface DispensaireRepository extends JpaRepository<Dispensaire, Integer> {
 
-    List<Dispensaire> findByRegion(String region);
+    List<Dispensaire> findByAdresseRegion(String region);
 }
